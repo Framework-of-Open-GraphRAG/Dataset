@@ -6,7 +6,7 @@ ns1:advanced_database a ns1:course ;
     rdfs:label "Advanced Database" ;
     ns1:also_known_as "Advanced Database",
         "banjut" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604174" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:lab_assignment ;
@@ -16,7 +16,7 @@ ns1:advanced_database a ns1:course ;
 ns1:algorithm_design_and_analysis a ns1:course ;
     rdfs:label "Algorithm Design and Analysis" ;
     ns1:also_known_as "DAA" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM603142" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_projects_and_demos,
@@ -30,7 +30,7 @@ ns1:also_known_as rdfs:label "also known as" ;
 ns1:bioinformatics a ns1:course ;
     rdfs:label "Bioinformatics" ;
     ns1:also_known_as "Bioinformatics" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604230" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -39,16 +39,16 @@ ns1:bioinformatics a ns1:course ;
         ns1:statistics_and_probability ;
     ns1:has_research_group ns1:information_retrieval_and_natural_language_processing .
 
-ns1:category rdfs:label "category" ;
+ns1:has_course_category rdfs:label "has course category" ;
     rdfs:domain ns1:course ;
-    rdfs:range ns1:has_course_category .
+    rdfs:range ns1:course_category .
 
 ns1:cloud_computing a ns1:course ;
     rdfs:label "Cloud Computing" ;
     ns1:also_known_as "CC",
         "Cloud Computing",
         "kowan" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604172" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:final_project,
@@ -61,7 +61,7 @@ ns1:competitive_programming a ns1:course ;
     ns1:also_known_as "CP",
         "Competitive Programming",
         "Struktur Data dan Algoritma Lanjutan" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604226" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:programming_assignment ;
@@ -70,7 +70,7 @@ ns1:competitive_programming a ns1:course ;
 
 ns1:competitive_programming_practicum a ns1:course ;
     rdfs:label "Competitive Programming Practicum" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604225" ;
     ns1:has_credits 1 ;
     ns1:has_evaluation_method ns1:programming_activities ;
@@ -82,7 +82,7 @@ ns1:compiler_techniques a ns1:course ;
     ns1:also_known_as "Compiler Engineering",
         "tekkom",
         "tekom" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604128" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -96,7 +96,7 @@ ns1:computational_geometry a ns1:course ;
     ns1:also_known_as "Computational Geometry",
         "compgeo",
         "geokom" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604045" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:programming_assignment ;
@@ -106,7 +106,7 @@ ns1:computational_geometry a ns1:course ;
 ns1:computer_assisted_teaching a ns1:course ;
     rdfs:label "Computer Assisted Teaching" ;
     ns1:also_known_as "PBK" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604183" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_presentation,
@@ -117,7 +117,7 @@ ns1:computer_assisted_teaching a ns1:course ;
 
 ns1:computer_science_special_topics a ns1:course ;
     rdfs:label "Computer Science Special Topics" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604029" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -134,7 +134,7 @@ ns1:computer_science_special_topics a ns1:course ;
 ns1:computer_vision a ns1:course ;
     rdfs:label "Computer Vision" ;
     ns1:also_known_as "CV" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604133" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:lab_assignment,
@@ -147,7 +147,7 @@ ns1:computers_and_society a ns1:course ;
     ns1:also_known_as "KM",
         "komas",
         "kommas" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE614093" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_discussiontask,
@@ -159,7 +159,7 @@ ns1:cryptography_and_information_security a ns1:course ;
     rdfs:label "Cryptography and Information Security" ;
     ns1:also_known_as "Crypto",
         "Cryptography" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604243" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -174,7 +174,7 @@ ns1:data_mining a ns1:course ;
     ns1:also_known_as "Data Mining",
         "datmin",
         "pendat" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604037" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -186,7 +186,7 @@ ns1:data_mining a ns1:course ;
 ns1:deep_learning a ns1:course ;
     rdfs:label "Deep Learning" ;
     ns1:also_known_as "DL" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604038" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:final_project,
@@ -199,7 +199,7 @@ ns1:deep_learning a ns1:course ;
 ns1:differential_equations a ns1:course ;
     rdfs:label "Differential Equations" ;
     ns1:also_known_as "persdif" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604212" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -214,7 +214,7 @@ ns1:digital_forensics a ns1:course ;
         "Cyber Forensic",
         "FD",
         "fortal" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604156" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:task,
@@ -226,7 +226,7 @@ ns1:distributed_systems a ns1:course ;
     rdfs:label "Distributed Systems" ;
     ns1:also_known_as "Distributed System",
         "sisdis" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604254" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -237,7 +237,7 @@ ns1:distributed_systems a ns1:course ;
 ns1:embedded_systems a ns1:course ;
     rdfs:label "Embedded Systems" ;
     ns1:also_known_as "Embedded System" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604151" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:test ;
@@ -246,14 +246,14 @@ ns1:embedded_systems a ns1:course ;
 
 ns1:english a ns1:course ;
     rdfs:label "English" ;
-    ns1:category ns1:university_mandatory_course ;
+    ns1:has_course_category ns1:university_mandatory_course ;
     ns1:has_course_code "UIGE600003" ;
     ns1:has_credits 2 ;
     ns1:has_evaluation_method ns1:ept_or_toefl_or_ielts_or_similar_exams .
 
 ns1:ethical_hacking a ns1:course ;
     rdfs:label "Ethical Hacking" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604258" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:capture_the_flag,
@@ -265,7 +265,7 @@ ns1:ethical_hacking a ns1:course ;
 ns1:final_project_group_assignment a ns1:course ;
     rdfs:label "Final Project Group Assignment" ;
     ns1:also_known_as "TA Kelompok" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE604098" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:report_document,
@@ -276,7 +276,7 @@ ns1:functional_programming a ns1:course ;
     rdfs:label "Functional Programming" ;
     ns1:also_known_as "Functional Programming",
         "pemfung" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604123" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:lab_assignment,
@@ -288,7 +288,7 @@ ns1:game_development a ns1:course ;
     rdfs:label "Game Development" ;
     ns1:also_known_as "Game Dev",
         "gamedev" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604021" ;
     ns1:has_credits 3 ;
     ns1:has_prerequisite_course ns1:data_structures_and_algorithms ;
@@ -325,7 +325,7 @@ ns1:human-computer_interaction a ns1:course ;
     rdfs:label "Human-Computer Interaction" ;
     ns1:also_known_as "Interaction Sistem",
         "SI" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE602024" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project ;
@@ -334,7 +334,7 @@ ns1:human-computer_interaction a ns1:course ;
 ns1:individual_final_assignment a ns1:course ;
     rdfs:label "Individual Final Assignment" ;
     ns1:also_known_as "TA" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE604099" ;
     ns1:has_credits 6 ;
     ns1:has_evaluation_method ns1:presentation,
@@ -347,7 +347,7 @@ ns1:information_retrieval a ns1:course ;
     ns1:also_known_as "IR",
         "Information Retrieval",
         "TBI" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604135" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -358,7 +358,7 @@ ns1:information_retrieval a ns1:course ;
 ns1:integrated_personality_development_skills a ns1:course ;
     rdfs:label "Integrated Personality Development Skills" ;
     ns1:also_known_as "MPKT" ;
-    ns1:category ns1:university_mandatory_course ;
+    ns1:has_course_category ns1:university_mandatory_course ;
     ns1:has_course_code "UIGE600007" ;
     ns1:has_credits 6 ;
     ns1:has_evaluation_method ns1:group_task,
@@ -367,7 +367,7 @@ ns1:integrated_personality_development_skills a ns1:course ;
 ns1:internet_of_things a ns1:course ;
     rdfs:label "Internet of Things" ;
     ns1:also_known_as "IoT" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604078" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -378,7 +378,7 @@ ns1:internet_of_things a ns1:course ;
 ns1:internship a ns1:course ;
     rdfs:label "Internship" ;
     ns1:also_known_as "KP" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE604097" ;
     ns1:has_credits 6 ;
     ns1:has_evaluation_method ns1:presentation,
@@ -387,7 +387,7 @@ ns1:internship a ns1:course ;
 
 ns1:introduction_to_software_security a ns1:course ;
     rdfs:label "Introduction to Software Security" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE602023" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -402,7 +402,7 @@ ns1:knowledge_graph a ns1:course ;
         "SW",
         "Semantik Web",
         "Web Semantics" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604131" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -415,7 +415,7 @@ ns1:knowledge_representation_and_reasoning a ns1:course ;
     rdfs:label "Knowledge Representation and Reasoning" ;
     ns1:also_known_as "Knowledge Represetation",
         "RPP" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604036" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -430,7 +430,7 @@ ns1:lab rdfs:label "lab" .
 ns1:logic_programming a ns1:course ;
     rdfs:label "Logic Programming" ;
     ns1:also_known_as "prolog" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604222" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -444,7 +444,7 @@ ns1:machine_learning a ns1:course ;
     rdfs:label "Machine Learning" ;
     ns1:also_known_as "ML",
         "Machine Learning" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604235" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:task,
@@ -459,7 +459,7 @@ ns1:mobile_technology a ns1:course ;
     ns1:also_known_as "Mobile Technology",
         "mobile",
         "tekmob" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604179" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -472,7 +472,7 @@ ns1:natural_language_processing a ns1:course ;
     ns1:also_known_as "NLP",
         "Natural Language Processing",
         "PBM" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604031" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -484,7 +484,7 @@ ns1:numerical_analysis a ns1:course ;
     rdfs:label "Numerical Analysis" ;
     ns1:also_known_as "Numerical Analysis",
         "anum" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM603117" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -495,7 +495,7 @@ ns1:numerical_analysis a ns1:course ;
 ns1:parallel_programming a ns1:course ;
     rdfs:label "Parallel Programming" ;
     ns1:also_known_as "Parallel Programming" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604229" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -509,7 +509,7 @@ ns1:parallel_programming a ns1:course ;
 ns1:religion a ns1:course ;
     rdfs:label "Religion" ;
     ns1:also_known_as "Agama" ;
-    ns1:category ns1:university_mandatory_course ;
+    ns1:has_course_category ns1:university_mandatory_course ;
     ns1:has_course_code "UIGE600004" ;
     ns1:has_credits 2 ;
     ns1:has_evaluation_method ns1:task .
@@ -517,7 +517,7 @@ ns1:religion a ns1:course ;
 ns1:robotics a ns1:course ;
     rdfs:label "robotics" ;
     ns1:also_known_as "Robotics" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604232" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:laboratory_assignment,
@@ -532,7 +532,7 @@ ns1:simulation_and_modeling a ns1:course ;
         "simmod",
         "simod",
         "simpem" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604111" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -543,7 +543,7 @@ ns1:simulation_and_modeling a ns1:course ;
 ns1:software_product_line_engineering a ns1:course ;
     rdfs:label "Software Product Line Engineering" ;
     ns1:also_known_as "SPLE" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604028" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:case_study,
@@ -555,7 +555,7 @@ ns1:software_product_line_engineering a ns1:course ;
 ns1:software_project a ns1:course ;
     rdfs:label "Software Project" ;
     ns1:also_known_as "PPL" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM603228" ;
     ns1:has_credits 6 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -571,7 +571,7 @@ ns1:software_quality_assurance a ns1:course ;
         "QA",
         "Quality Assurance",
         "Software Qualtify Assurance" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604126" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:group_task,
@@ -584,7 +584,7 @@ ns1:spoken_language_processing a ns1:course ;
     ns1:also_known_as "PBL",
         "TTS",
         "Text-to-speech" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604032" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:lab_assignment,
@@ -596,7 +596,7 @@ ns1:system_administration a ns1:course ;
     rdfs:label "System Administration" ;
     ns1:also_known_as "Administrasi Jaringan dan Sistem",
         "System Administration" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSIE604274" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -607,7 +607,7 @@ ns1:system_administration a ns1:course ;
 
 ns1:system_programming a ns1:course ;
     rdfs:label "System Programming" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604227" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:project_assignment ;
@@ -618,7 +618,7 @@ ns1:system_programming a ns1:course ;
 ns1:technopreneurship a ns1:course ;
     rdfs:label "Technopreneurship" ;
     ns1:also_known_as "technop" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSIE604290" ;
     ns1:has_credits 3 ;
     ns1:has_research_group ns1:center_for_cyber_security_and_cryptography,
@@ -634,7 +634,7 @@ ns1:web_application_architecture a ns1:course ;
     ns1:also_known_as "AAW",
         "Webapp Architectural",
         "Webapp Architecture" ;
-    ns1:category ns1:study_program_elective_course ;
+    ns1:has_course_category ns1:study_program_elective_course ;
     ns1:has_course_code "CSCE604271" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -649,7 +649,7 @@ ns1:advanced_programming a ns1:course ;
     ns1:also_known_as "Advanced Programming",
         "adpro",
         "projut" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM602223" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:lab_assignment,
@@ -679,7 +679,7 @@ ns1:introduction_to_digital_systems a ns1:course ;
     rdfs:label "Introduction to Digital Systems" ;
     ns1:also_known_as "Introduction to Digital Systems",
         "PSD" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM601150" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:test .
@@ -711,7 +711,7 @@ ns1:projects_and_presentations a ns1:evaluation ;
 ns1:calculus_1 a ns1:course ;
     rdfs:label "Calculus 1" ;
     ns1:also_known_as "Calculus 1" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE601012" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -728,7 +728,7 @@ ns1:has_prerequisite rdfs:label "has prerequisite" .
 ns1:language_theory_and_automata a ns1:course ;
     rdfs:label "Language Theory & Automata" ;
     ns1:also_known_as "TBA" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM602241" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:test ;
@@ -741,7 +741,7 @@ ns1:report_document a ns1:evaluation ;
 ns1:research_methodology_and_scientific_writing a ns1:course ;
     rdfs:label "Research Methodology and Scientific Writing" ;
     ns1:also_known_as "MPPI" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE603091" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -750,7 +750,7 @@ ns1:research_methodology_and_scientific_writing a ns1:course ;
 ns1:calculus_2 a ns1:course ;
     rdfs:label "Calculus 2" ;
     ns1:also_known_as "Calculus 2" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM601213" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -766,7 +766,7 @@ ns1:operating_system a ns1:course ;
     ns1:also_known_as "OS",
         "Operating System",
         "SO" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM602055" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:task,
@@ -781,7 +781,7 @@ ns1:software_engineering a ns1:course ;
     ns1:also_known_as "RPL",
         "SE",
         "Software Engineering" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM603125" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -791,7 +791,7 @@ ns1:software_engineering a ns1:course ;
 ns1:supervisor_evaluation a ns1:evaluation ;
     rdfs:label "Supervisor Evaluation" .
 
-ns1:university_mandatory_course a ns1:has_course_category ;
+ns1:university_mandatory_course a ns1:course_category ;
     rdfs:label "University Mandatory Course" .
 
 ns1:database a ns1:course ;
@@ -800,7 +800,7 @@ ns1:database a ns1:course ;
         "DB",
         "Database",
         "basdat" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE602070" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -813,7 +813,7 @@ ns1:discrete_mathematics_2 a ns1:course ;
         "Discrete Mathematics 2",
         "MD 2",
         "matdis 2" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE601011" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:test .
@@ -825,7 +825,7 @@ ns1:introduction_to_computer_organization a ns1:course ;
     rdfs:label "Introduction to Computer Organization" ;
     ns1:also_known_as "Introduction to Computer Organization",
         "POK" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM601252" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:task,
@@ -837,7 +837,7 @@ ns1:linear_algebra a ns1:course ;
     ns1:also_known_as "Linear Algebra",
         "alin",
         "linalg" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE602012" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:test .
@@ -846,7 +846,7 @@ ns1:platform_based_programming a ns1:course ;
     rdfs:label "Platform Based Programming" ;
     ns1:also_known_as "PBP",
         "Platform-based Programming" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE602022" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -857,7 +857,7 @@ ns1:statistics_and_probability a ns1:course ;
     rdfs:label "Statistics and Probability" ;
     ns1:also_known_as "Statistics and Probability",
         "statprob" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM602013" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:programming_assignment,
@@ -875,17 +875,17 @@ ns1:discrete_mathematics_1 a ns1:course ;
         "Discrete Mathematics 1",
         "MD 1",
         "matdis 1" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE601010" ;
     ns1:has_credits 3 .
 
-ns1:has_course_category rdfs:label "has course category" .
+ns1:course_category rdfs:label "course category" .
 
 ns1:programming_basics_2 a ns1:course ;
     rdfs:label "Programming Basics 2" ;
     ns1:also_known_as "DDP 2",
         "Introduction to Programming 2" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE601021" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:demo,
@@ -900,7 +900,7 @@ ns1:programming_basics_1 a ns1:course ;
     rdfs:label "Programming Basics 1" ;
     ns1:also_known_as "DDP 1",
         "Introduction to Programming 1" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE601020" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:demo,
@@ -911,7 +911,7 @@ ns1:computer_network a ns1:course ;
     ns1:also_known_as "Computer Network",
         "compnet",
         "jarkom" ;
-    ns1:category ns1:study_program_mandatory_course ;
+    ns1:has_course_category ns1:study_program_mandatory_course ;
     ns1:has_course_code "CSCM603154" ;
     ns1:has_credits 3 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -929,7 +929,7 @@ ns1:introduction_to_artificial_intelligence_and_data_science a ns1:course ;
     ns1:also_known_as "DS",
         "Data Science",
         "kasdad" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE603130" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:group_project,
@@ -957,7 +957,7 @@ ns1:data_structures_and_algorithms a ns1:course ;
     ns1:also_known_as "DSA",
         "Data Structure and Algorithm",
         "SDA" ;
-    ns1:category ns1:faculty_mandatory_course ;
+    ns1:has_course_category ns1:faculty_mandatory_course ;
     ns1:has_course_code "CSGE602040" ;
     ns1:has_credits 4 ;
     ns1:has_evaluation_method ns1:programming_projects,
@@ -971,7 +971,7 @@ ns1:information_retrieval_and_natural_language_processing a ns1:research_lab ;
 ns1:programming_assignment a ns1:evaluation ;
     rdfs:label "Programming Assignment" .
 
-ns1:study_program_mandatory_course a ns1:has_course_category ;
+ns1:study_program_mandatory_course a ns1:course_category ;
     rdfs:label "Study Program Mandatory Course" .
 
 ns1:group_project a ns1:evaluation ;
@@ -981,7 +981,7 @@ ns1:reliable_software_engineering a ns1:research_lab ;
     rdfs:label "Reliable Software Engineering" ;
     ns1:also_known_as "RSE" .
 
-ns1:faculty_mandatory_course a ns1:has_course_category ;
+ns1:faculty_mandatory_course a ns1:course_category ;
     rdfs:label "Faculty Mandatory Course" .
 
 ns1:task a ns1:evaluation ;
@@ -989,7 +989,7 @@ ns1:task a ns1:evaluation ;
 
 ns1:evaluation rdfs:label "evaluation" .
 
-ns1:study_program_elective_course a ns1:has_course_category ;
+ns1:study_program_elective_course a ns1:course_category ;
     rdfs:label "Study Program Elective Course" .
 
 ns1:test a ns1:evaluation ;
