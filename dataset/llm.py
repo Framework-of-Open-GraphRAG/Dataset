@@ -16,6 +16,6 @@ model_kwargs = {
     "return_full_text": False,
 }
 
-llm = HuggingFaceHub(repo_id="meta-llama/Meta-Llama-3-8B-Instruct", model_kwargs=model_kwargs, huggingfacehub_api_token=token)
+llm = HuggingFaceHub(repo_id="Qwen/Qwen2.5-3B-Instruct", model_kwargs=model_kwargs, huggingfacehub_api_token=token)
 chat_model = ChatHuggingFace(llm=llm)
 

@@ -100,7 +100,6 @@ Where:
 Transform the SPARQL query to a natural language question.
 Output just the transformed question
     """
-    print(prompt)
     result = chat_model.invoke(prompt).content
     if "Here" in result:
       matched = re.search(r'"(.*?)"', result, re.DOTALL)
