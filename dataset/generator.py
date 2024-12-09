@@ -100,6 +100,7 @@ Where:
 Transform the SPARQL query to a natural language question.
 Output just the transformed question
     """
+    print(prompt)
     result = chat_model.invoke(prompt).content
     if "Here" in result:
       matched = re.search(r'"(.*?)"', result, re.DOTALL)
@@ -193,8 +194,6 @@ Output just the transformed question
     # supports only a b ?x
     triple = self.__get_one_triple()
     query_uri = "select ?x {{ <{s}> <{p}> ?x . }}"
-    query_prefix = "select ?x {{ {s} {p} ?x . }}"
-    query_prefix_reverse = "select ?x {{ ?x {p} {o} . }}"
     query_uri_reverse = "select ?x {{ ?x <{p}> {o} . }}"
 
     if not isinstance(triple[2], Literal):
@@ -239,10 +238,6 @@ Output just the transformed question
         else:
           triple_pattern.append(f"?x <{p}> <{o}>")
 
-      # triple_pattern = [
-      #     f"?x <{p}> '{o}'" if isinstance(o, Literal) else f"?x <{p}> <{o}>"
-      #     for (_, p, o) in triples
-      # ]
       triple_pattern = " . ".join(triple_pattern) + " ."
       query = f"select ?x {{ {triple_pattern} }}"
       mapping = {}
